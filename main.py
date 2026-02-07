@@ -23,5 +23,5 @@ print(end-start," time taken")
 print(proc.cpu_percent()) 
 print(proc.memory_info().rss/1024/1024, "MB ") 
 
-# Threading - network information 
-# Multi-processing - ML model
+# Threading network information 
+# Multi-processing ML model
