@@ -2,10 +2,12 @@ from scapy.all import sniff
 import time
 
 def pack_info_extract():
+    start = time.time() # perf
     packets = sniff(count=10)
     for i in packets:
         packets.summary()
-    print("\n        ")
+    end = time.time() #perf
+    print(f"\n    Test Case {end-start} time    \n")
 
 """
 IPV4_SRC_ADDR
